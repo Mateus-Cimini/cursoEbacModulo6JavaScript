@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"aec77b75fd5465a0","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/Introduçao ao canvas.md","x":-180,"y":-240,"width":346,"height":60,"color":"3"},
+		{"id":"a5b7cf480b37d69d","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/OQUE È UM SELETOR.md","x":-179,"y":-80,"width":345,"height":61,"color":"4"},
+		{"id":"6d849efed68fb14e","x":-132,"y":60,"width":250,"height":60,"color":"1","type":"text","text":"TIPOS DE SELETORES"},
+		{"id":"33a0e61a0935808f","x":-518,"y":7,"width":338,"height":50,"color":"3","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/nota querySelector().md"},
+		{"id":"02816df1eda6f2a9","x":-556,"y":120,"width":376,"height":50,"color":"2","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/nota querySelectorAll().md"},
+		{"id":"7b4780b361910a84","x":205,"y":220,"width":430,"height":88,"color":"#3905f5","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/nota getElementsByTagName().md"},
+		{"id":"f2600d381e04bee8","x":220,"y":79,"width":439,"height":83,"color":"6","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/nota getElementsByClassName().md"},
+		{"id":"e72b4ab5919bc543","x":228,"y":-18,"width":385,"height":50,"color":"5","type":"file","file":"programaçao/JAVA SCRIPT/Manipulando html/SELETORES/notas/nota getElementById().md"}
+	],
+	"edges":[
+		{"id":"2f375f82486834bf","fromNode":"aec77b75fd5465a0","fromSide":"bottom","toNode":"a5b7cf480b37d69d","toSide":"top","color":"3"},
+		{"id":"25f85816a646b0fc","fromNode":"a5b7cf480b37d69d","fromSide":"bottom","toNode":"6d849efed68fb14e","toSide":"top","color":"4"},
+		{"id":"23207316db83de66","fromNode":"6d849efed68fb14e","fromSide":"left","toNode":"33a0e61a0935808f","toSide":"right","color":"1"},
+		{"id":"880ff307dded4be9","fromNode":"6d849efed68fb14e","fromSide":"left","toNode":"02816df1eda6f2a9","toSide":"right","color":"1"},
+		{"id":"c8e7494a08e227e4","fromNode":"6d849efed68fb14e","fromSide":"right","toNode":"e72b4ab5919bc543","toSide":"left","color":"1"},
+		{"id":"e95d914aa22cac7f","fromNode":"6d849efed68fb14e","fromSide":"right","toNode":"f2600d381e04bee8","toSide":"left","color":"1"},
+		{"id":"2f07191300feefa0","fromNode":"6d849efed68fb14e","fromSide":"right","toNode":"7b4780b361910a84","toSide":"left","color":"1"}
+	]
+}
