@@ -46,4 +46,20 @@ button:hover {
     background-color: #2ecc71;
     color: #fff;
     padding: 16px;
+    display: none;
+}
+
+.errorMessage{
+    background-color:#d30000;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.input-error {
+    border: 2px solid #d30000;  
+    outline-color: #d30000;
+    color: #d30000;
 }

@@ -15,14 +15,13 @@
         <h2>Depósitos</h2>
         <form id="formDeposito">
             <input id="inputName" type="text" required placeholder="Nome completo do beneficiário" />
+            <p class="errorMessage">O nome precisa ser completo</p>
             <input id="inputNumber" type="number" required placeholder="Número da conta" />
             <input id="inputValue" type="number" required placeholder="Valor" min="0.01" step="0.01" />
             <textarea placeholder="Descrição (opcional)"></textarea>
             <button id="btn" type="submit">Depositar</button>
         </form>
-        <p class="messageSuccess">
-            O montante de: <b>1001</b> foi enviado para <b>nametest</b> - conta: <b>0001</b>
-        </p>
+        <p class="messageSuccess"> </p>
     </div>
 </body>
 </html>

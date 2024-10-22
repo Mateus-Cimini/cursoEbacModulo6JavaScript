@@ -1,4 +1,5 @@
 const form = document.getElementById('formDeposito');
+const nomeBeneficiario = document.getElementById('inputName');
 
 function validaNome(nomeCompleto) {
     const nomeComoArray = nomeCompleto.split(' ').filter(nome => nome.trim().length > 0);
@@ -9,7 +10,6 @@ form.addEventListener('submit', function(e) {
     let formEValido = false;
     e.preventDefault();
 
-    const nomeBeneficiario = document.getElementById('inputName');
     const numeroContaBeneficiario = document.getElementById('inputNumber');
     const valorDeposito = document.getElementById('inputValue');
     const valorFormatado = parseFloat(valorDeposito.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
@@ -18,15 +18,28 @@ form.addEventListener('submit', function(e) {
 
     formEValido = validaNome(nomeBeneficiario.value);
     if (formEValido) {
-        document.querySelector('messageSuccess').innerHTML = mensagemSucesso
+        const containerMessagemSucesso = document.querySelector('.messageSuccess');
+        containerMessagemSucesso.innerHTML = mensagemSucesso;
+        containerMessagemSucesso.style.display = 'block';
 
-        nomeBeneficiario.value = ''
-        numeroContaBeneficiario.value = ''
-        valorDeposito.value = ''
+        nomeBeneficiario.value = '';
+        numeroContaBeneficiario.value = '';
+        valorDeposito.value = '';
 
     } else {
-        alert('O nome não está completo');
+        nomeBeneficiario.classList.add('input-error');  
+        document.querySelector('.errorMessage').style.display = 'block';
     }
 });
 
-console.log(form);
+nomeBeneficiario.addEventListener('keyup', function(e) {
+    formEValido = validaNome(e.target.value);
+
+    if (!formEValido) {
+        nomeBeneficiario.classList.add('input-error');  
+        document.querySelector('.errorMessage').style.display = 'block';
+    } else {
+        nomeBeneficiario.classList.remove('input-error');  
+        document.querySelector('.errorMessage').style.display = 'none';
+    }
+});
