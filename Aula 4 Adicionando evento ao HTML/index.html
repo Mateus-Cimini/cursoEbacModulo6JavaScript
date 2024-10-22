@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML com JS aula 4</title>
     <link rel="stylesheet" href="./main.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js" defer></script>
+
 </head>
 <body>
     <div class="container">
@@ -15,7 +16,7 @@
         <form id="formDeposito">
             <input id="inputName" type="text" required placeholder="Nome completo do beneficiário" />
             <input id="inputNumber" type="number" required placeholder="Número da conta" />
-            <input id="inputValue" type="number" required placeholder="Valor" />
+            <input id="inputValue" type="number" required placeholder="Valor" min="0.01" step="0.01" />
             <textarea placeholder="Descrição (opcional)"></textarea>
             <button id="btn" type="submit">Depositar</button>
         </form>
