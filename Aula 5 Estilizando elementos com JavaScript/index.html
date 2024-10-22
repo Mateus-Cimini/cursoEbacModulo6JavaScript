@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS aula 4</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>EBAC Banking</h1>
+        <h2>Depósitos</h2>
+        <form id="formDeposito">
+            <input id="inputName" type="text" required placeholder="Nome completo do beneficiário" />
+            <input id="inputNumber" type="number" required placeholder="Número da conta" />
+            <input id="inputValue" type="number" required placeholder="Valor" min="0.01" step="0.01" />
+            <textarea placeholder="Descrição (opcional)"></textarea>
+            <button id="btn" type="submit">Depositar</button>
+        </form>
+        <p class="messageSuccess">
+            O montante de: <b>1001</b> foi enviado para <b>nametest</b> - conta: <b>0001</b>
+        </p>
+    </div>
+</body>
+</html>
