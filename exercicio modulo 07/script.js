@@ -24,14 +24,13 @@ function validNumber(num1, num2) {
 }
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita que o formulário seja enviado
-    const num1 = inputNum1.value; // Obtém o valor do input A
-    const num2 = inputNum2.value; // Obtém o valor do input B
+    e.preventDefault(); 
+    const num1 = inputNum1.value; 
+    const num2 = inputNum2.value; 
     
-    const isValid = validNumber(num1, num2); // Chama a função passando os valores
+    const isValid = validNumber(num1, num2); 
 
     if (isValid) {
-        // Limpa os campos de input se a validação for bem-sucedida
         inputNum1.value = '';
         inputNum2.value = '';
     }
